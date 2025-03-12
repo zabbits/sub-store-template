@@ -60,14 +60,7 @@
   "route": {
     "rules": [
       {
-        "action": "sniff",
-        "sniffer": [
-          "http",
-          "tls",
-          "quic",
-          "dns"
-        ],
-        "timeout": "500ms"
+        "action": "sniff"
       },
       {
         "type": "logical",
@@ -562,7 +555,7 @@
     },
     "cache_file": {
       "enabled": true,
-      "store_fakeip": true
+      "store_fakeip": false
     }
   },
   "log": {
