@@ -34,6 +34,11 @@
         "server": "cf"
       },
       {
+        "rule_set": "rule_local",
+        "action": "route",
+        "server": "ali"
+      },
+      {
         "rule_set": "cn_domain",
         "action": "route",
         "server": "ali"
@@ -81,22 +86,22 @@
         "outbound": "direct"
       },
       {
-        "protocol": "ssh",
-        "action": "route",
-        "outbound": "direct"
-      },
-      {
-        "rule_set": "rule_local",
-        "action": "route",
-        "outbound": "direct"
-      },
-      {
         "clash_mode": "Global",
         "action": "route",
         "outbound": "GLOBAL"
       },
       {
         "clash_mode": "Direct",
+        "action": "route",
+        "outbound": "direct"
+      },
+      {
+        "protocol": "ssh",
+        "action": "route",
+        "outbound": "direct"
+      },
+      {
+        "rule_set": "rule_local",
         "action": "route",
         "outbound": "direct"
       },
@@ -201,6 +206,19 @@
               "chengquan.cn",
               "tongdatech.com",
               "zabbits.com"
+            ]
+          },
+          {
+            "domain_suffix": [
+              ".jssdbmt.com",
+              ".g.qll-times.com",
+              ".498.net",
+              ".fengniaochuangxin.com",
+              ".duibatest.com.cn",
+              ".ejiaofei.cn",
+              ".chengquan.cn",
+              ".tongdatech.com",
+              ".zabbits.com"
             ]
           },
           {
