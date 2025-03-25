@@ -8,7 +8,7 @@
     "clash_api": {
       "external_controller": "0.0.0.0:21221",
       "external_ui": "ui",
-      "external_ui_download_url": "https://ghproxy.top/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_url": "https://gh.201109.xyz/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
       "external_ui_download_detour": "direct"
     },
     "cache_file": {
