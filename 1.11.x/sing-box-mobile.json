@@ -60,10 +60,15 @@
       }
     ],
     "final": "cf",
+    "strategy": "ipv4_only",
     "independent_cache": true
   },
   "route": {
     "rules": [
+      {
+        "action": "resolve",
+        "strategy": "ipv4_only"
+      },
       {
         "action": "sniff"
       },
@@ -155,9 +160,6 @@
         "outbound": "proxy"
       },
       {
-        "action": "resolve"
-      },
-      {
         "rule_set": [
           "telegram_ip",
           "telegram_domain"
@@ -223,7 +225,7 @@
           },
           {
             "ip_cidr": [
-              "100.101.1.0/24",
+              "100.64.0.0/10",
               "8.218.0.149"
             ]
           }
@@ -557,8 +559,7 @@
     {
       "type": "tun",
       "address": [
-        "172.19.0.0/30",
-        "fdfe:dcba:9876::0/126"
+        "172.19.0.0/30"
       ],
       "stack": "mixed",
       "auto_route": true
