@@ -36,6 +36,15 @@ config.outbounds.map(i => {
   }
 })
 
+config.outbounds.map(i => {
+    if (i.up) {
+        delete i.up
+    }
+    if (i.down) {
+        delete i.down
+    }
+})
+
 config.outbounds.forEach(outbound => {
   if (Array.isArray(outbound.outbounds) && outbound.outbounds.length === 0) {
     if (!compatible) {
